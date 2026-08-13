@@ -63,15 +63,31 @@ section { padding: 100px 10%; }
 .hero-description { color: var(--text-dim); max-width: 550px; margin-bottom: 40px; font-size: 1rem; }
 
 /* Work Experience Section */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: stretch;
+}
 .experience-highlight {
-    max-width: 980px;
-    margin: 0 auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
     background: rgba(22, 27, 42, 0.85);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 24px;
     padding: 40px 42px;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.experience-highlight:hover {
+    transform: translateY(-4px);
+    border-color: rgba(59, 130, 246, 0.4);
 }
 .work-badge {
     display: inline-block;
@@ -270,6 +286,7 @@ footer {
     .hero-socials { justify-content: center; }
     .hero-action { align-items: center; }
     .form-row { grid-template-columns: 1fr; }
+    .experience-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
@@ -309,6 +326,30 @@ footer {
     .profile-frame { width: min(320px, 75vw); height: min(320px, 75vw); }
     .projects-page { padding: 110px 5% 60px; }
     .project-grid { grid-template-columns: 1fr; }
+    .experience-highlight { padding: 28px 22px; }
+    .work-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .company-tag {
+        white-space: normal;
+        align-self: flex-start;
+        max-width: 100%;
+        width: auto;
+        flex-wrap: wrap;
+    }
+    .company-logo {
+        width: 36px;
+        height: 36px;
+    }
+    .work-address {
+        align-items: flex-start;
+        line-height: 1.6;
+    }
+    .experience-highlight h3 {
+        font-size: clamp(1.4rem, 5vw, 2rem);
+    }
 }
 
 @media (max-width: 480px) {
