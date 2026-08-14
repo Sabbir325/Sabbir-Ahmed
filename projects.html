@@ -3,194 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects | Sabbir Ahmed</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+    <meta name="description" content="My Projects | Sabbir Ahmed - UX/UI Case Studies and Web Development Projects">
+    <meta name="keywords" content="Projects, Portfolio, UX/UI, Case Studies, Web Development, Sabbir Ahmed">
+    <meta name="author" content="Sabbir Ahmed">
+    <title>My Projects | Sabbir Ahmed - WordPress Developer & E-commerce Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="Sabbir.jpeg" type="image/jpeg">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .projects-page {
-            padding: 120px 8% 80px;
-            background: radial-gradient(circle at top right, #1e293b, #0b0f1a);
-            min-height: 100vh;
-        }
-        .header-info {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        .header-info h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            background: linear-gradient(to right, #fff, var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-        }
-        .project-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 30px;
-            text-decoration: none;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            position: relative;
-            overflow: hidden;
-        }
-        .project-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 4px;
-            background: var(--accent);
-            transform: scaleX(0);
-            transition: 0.4s;
-            transform-origin: left;
-        }
-        .project-card:hover {
-            transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.07);
-            border-color: var(--accent);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-        }
-        .project-card:hover::before {
-            transform: scaleX(1);
-        }
-        .p-icon {
-            font-size: 2.5rem;
-            color: var(--accent);
-            margin-bottom: 20px;
-        }
-        .project-card h3 {
-            color: #fff;
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-        }
-        .project-card p {
-            color: var(--text-dim);
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 25px;
-        }
-        .p-footer {
-            display: flex;
-            align-items: center;
-            color: var(--accent);
-            font-weight: 600;
-            font-size: 0.9rem;
-            gap: 10px;
-        }
-        .back-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            color: #fff;
-            text-decoration: none;
-            margin-bottom: 30px;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-        .back-btn:hover { color: var(--accent); }
-    </style>
 </head>
 <body>
 
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">SABBIR<span>.</span></a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="index.html#home" class="nav-link">Home</a></li>
+            <li><a href="index.html#about" class="nav-link">About</a></li>
+            <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+            <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="index.html#education" class="nav-link">Education</a></li>
+            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Projects Page -->
     <section class="projects-page">
-        <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+        <a href="index.html" class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Home
+        </a>
         
-        <div class="header-info">
-            <h1>Creative Portfolio</h1>
-            <p style="color: var(--text-dim);">A collection of 9 specialized UX/UI projects and case studies.</p>
+        <div class="header-info" data-aos="fade-up">
+            <h1>My Projects</h1>
+            <p>Explore my collection of UX/UI case studies, design projects, and web development work.</p>
         </div>
 
         <div class="project-grid">
-            <a href="https://www.behance.net/gallery/232220679/Ux-Case-Study-Fitness-App%28Fitverse%29" target="_blank" class="project-card">
-                <div class="p-icon"><i class="fa-solid fa-dumbbell"></i></div>
+            <!-- Fitverse App - Featured -->
+            <a href="https://www.behance.net/gallery/232220679/Ux-Case-Study-Fitness-App%28Fitverse%29" target="_blank" rel="noopener noreferrer" class="project-card" data-aos="fade-up">
+                <div class="p-icon">
+                    <i class="fa-solid fa-dumbbell"></i>
+                </div>
                 <div>
                     <h3>Fitverse App</h3>
-                    <p>A comprehensive Fitness App Case Study focusing on user workout tracking and health metrics.</p>
+                    <p>A comprehensive fitness app case study focusing on user workout tracking, health metrics, and personalized training programs with a seamless user experience.</p>
                 </div>
-                <div class="p-footer">View Case Study <i class="fa-solid fa-arrow-right-long"></i></div>
+                <div class="p-footer">
+                    <span>View Case Study</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
             </a>
 
-            <a href="https://www.behance.net/gallery/232077105/UX-CASE-STUDY-REAL-ESTATE-%28INSTONE%29" target="_blank" class="project-card">
-                <div class="p-icon"><i class="fa-solid fa-house-chimney"></i></div>
+            <!-- Instone Real Estate - Featured -->
+            <a href="https://www.behance.net/gallery/232077105/UX-CASE-STUDY-REAL-ESTATE-%28INSTONE%29" target="_blank" rel="noopener noreferrer" class="project-card" data-aos="fade-up">
+                <div class="p-icon">
+                    <i class="fa-solid fa-house-chimney"></i>
+                </div>
                 <div>
                     <h3>Instone Real Estate</h3>
-                    <p>UX research and UI design for a seamless property buying and selling experience.</p>
+                    <p>UX research and UI design for a premium real estate platform, streamlining property discovery, viewing, and buying processes with intuitive navigation.</p>
                 </div>
-                <div class="p-footer">View Case Study <i class="fa-solid fa-arrow-right-long"></i></div>
+                <div class="p-footer">
+                    <span>View Case Study</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
             </a>
 
-            <a href="https://www.behance.net/sabbirahmed4396" target="_blank" class="project-card">
-                <div class="p-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <!-- Creative Agency Web -->
+            <a href="https://www.behance.net/sabbirahmed4396" target="_blank" rel="noopener noreferrer" class="project-card" data-aos="fade-up">
+                <div class="p-icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
                 <div>
                     <h3>Creative Agency Web</h3>
-                    <p>Modern landing page design for digital agencies to showcase their services and team.</p>
+                    <p>Modern landing page design for digital agencies to showcase their services, portfolio, team, and expertise in an engaging and professional manner.</p>
                 </div>
-                <div class="p-footer">View Project <i class="fa-solid fa-arrow-right-long"></i></div>
+                <div class="p-footer">
+                    <span>View Project</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
             </a>
 
-            <a href="https://www.behance.net/sabbirahmed4396" target="_blank" class="project-card">
-                <div class="p-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            <!-- E-Commerce Mobile -->
+            <a href="https://www.behance.net/sabbirahmed4396" target="_blank" rel="noopener noreferrer" class="project-card" data-aos="fade-up">
+                <div class="p-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
                 <div>
                     <h3>E-Commerce Mobile</h3>
-                    <p>A user-centric shopping app design focusing on smooth checkout and product discovery.</p>
+                    <p>User-centric mobile shopping app design with focus on smooth product discovery, personalized recommendations, and hassle-free checkout experience.</p>
                 </div>
-                <div class="p-footer">View Project <i class="fa-solid fa-arrow-right-long"></i></div>
+                <div class="p-footer">
+                    <span>View Project</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
             </a>
 
-            <a href="https://www.behance.net/sabbirahmed4396" target="_blank" class="project-card">
-                <div class="p-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <!-- LMS Dashboard -->
+            <a href="https://www.behance.net/sabbirahmed4396" target="_blank" rel="noopener noreferrer" class="project-card" data-aos="fade-up">
+                <div class="p-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
                 <div>
                     <h3>LMS Dashboard</h3>
-                    <p>Learning Management System interface for students and teachers to track progress.</p>
+                    <p>Comprehensive Learning Management System interface for students and teachers to manage courses, track progress, submit assignments, and monitor educational metrics.</p>
                 </div>
-                <div class="p-footer">View Project <i class="fa-solid fa-arrow-right-long"></i></div>
+                <div class="p-footer">
+                    <span>View Project</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
             </a>
 
-            <a href="https://www.behance.net/sabbirahmed4396" target="_blank" class="project-card">
-                <div class="p-icon"><i class="fa-solid fa-plane-up"></i></div>
+            <!-- Travel Booking -->
+            <a href="https://www.behance.net/sabbirahmed4396" target="_blank" rel="noopener noreferrer" class="project-card" data-aos="fade-up">
+                <div class="p-icon">
+                    <i class="fa-solid fa-plane-up"></i>
+                </div>
                 <div>
                     <h3>Travel Booking</h3>
-                    <p>Clean and minimal interface for flight and hotel reservations across the globe.</p>
+                    <p>Clean and minimal travel booking platform for flights and hotel reservations, with advanced filtering, price comparisons, and itinerary management features.</p>
                 </div>
-                <div class="p-footer">View Project <i class="fa-solid fa-arrow-right-long"></i></div>
+                <div class="p-footer">
+                    <span>View Project</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
             </a>
 
-            <a href="https://www.behance.net/sabbirahmed4396" target="_blank" class="project-card">
-                <div class="p-icon"><i class="fa-solid fa-wallet"></i></div>
+            <!-- Fintech Wallet App -->
+            <a href="https://www.behance.net/sabbirahmed4396" target="_blank" rel="noopener noreferrer" class="project-card" data-aos="fade-up">
+                <div class="p-icon">
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
                 <div>
                     <h3>Fintech Wallet App</h3>
-                    <p>Digital banking solution focusing on secure transactions and expense management.</p>
+                    <p>Digital banking solution focusing on secure transactions, expense tracking, budgeting tools, and seamless money transfer with robust security features.</p>
                 </div>
-                <div class="p-footer">View Project <i class="fa-solid fa-arrow-right-long"></i></div>
+                <div class="p-footer">
+                    <span>View Project</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
             </a>
 
-            <a href="https://www.behance.net/sabbirahmed4396" target="_blank" class="project-card">
-                <div class="p-icon"><i class="fa-solid fa-rocket"></i></div>
+            <!-- SaaS Landing Page -->
+            <a href="https://www.behance.net/sabbirahmed4396" target="_blank" rel="noopener noreferrer" class="project-card" data-aos="fade-up">
+                <div class="p-icon">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
                 <div>
                     <h3>SaaS Landing Page</h3>
-                    <p>High-converting landing page design for software-as-a-service products.</p>
+                    <p>High-converting landing page design for software-as-a-service products with compelling value propositions, pricing tables, and clear calls-to-action.</p>
                 </div>
-                <div class="p-footer">View Project <i class="fa-solid fa-arrow-right-long"></i></div>
+                <div class="p-footer">
+                    <span>View Project</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
             </a>
 
-            <a href="https://www.behance.net/sabbirahmed4396" target="_blank" class="project-card">
-                <div class="p-icon"><i class="fa-solid fa-stethoscope"></i></div>
+            <!-- Healthcare Portal -->
+            <a href="https://www.behance.net/sabbirahmed4396" target="_blank" rel="noopener noreferrer" class="project-card" data-aos="fade-up">
+                <div class="p-icon">
+                    <i class="fa-solid fa-stethoscope"></i>
+                </div>
                 <div>
                     <h3>Healthcare Portal</h3>
-                    <p>Patient-centric portal for booking appointments and viewing medical records.</p>
+                    <p>Patient-centric healthcare platform for booking medical appointments, viewing records, accessing prescriptions, and communicating with healthcare providers securely.</p>
                 </div>
-                <div class="p-footer">View Project <i class="fa-solid fa-arrow-right-long"></i></div>
+                <div class="p-footer">
+                    <span>View Project</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
             </a>
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <a href="index.html" class="logo">SABBIR<span>.</span></a>
+                <p class="footer-tagline">Creating seamless digital experiences through code and design.</p>
+                
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/sabbirahmed.7sabi" target="_blank" rel="noopener noreferrer" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sabbir-ahmed-0495a4214" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Sabbir325" target="_blank" rel="noopener noreferrer" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.behance.net/sabbirahmed4396" target="_blank" rel="noopener noreferrer" title="Behance">
+                        <i class="fa-brands fa-behance"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Sabbir Ahmed. All Rights Reserved.</p>
+            <p>Building the web, one pixel at a time.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabbir Ahmed | Portfolio</title>
+    <meta name="description" content="Sabbir Ahmed | WordPress Developer & E-commerce Manager. CSE Graduate with expertise in UX/UI Design, IT Support, and Networking.">
+    <meta name="keywords" content="WordPress Developer, E-commerce Manager, UX/UI Designer, CSE Graduate, Sabbir Ahmed">
+    <meta name="author" content="Sabbir Ahmed">
+    <title>Sabbir Ahmed | WordPress Developer & E-commerce Manager</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    <link rel="icon" href="Sabbir.jpeg" type="image/jpeg">    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="Sabbir.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Header & Navigation -->
     <header>
         <a href="index.html" class="logo">SABBIR<span>.</span></a>
         <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -19,226 +25,636 @@
         </button>
         <ul class="nav-menu">
             <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
             <li><a href="#education" class="nav-link">Education</a></li>
-            <li><a href="#contact-section" class="nav-link">Contact</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
     </header>
 
-    <section class="hero section-bg" id="home" style="background-image: url('https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80&w=1920');">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
         <div class="hero-content" data-aos="fade-right">
-            <p class="hero-subtitle">WELCOME TO MY WORLD</p>
-            <h1>Hi, I'm <span>Sabbir Ahmed</span></h1>
-            <div class="designation-container">
-                <span id="typed-text"></span>
-            </div>
-            <p class="hero-description">
-                A passionate <strong>CSE Graduate</strong> and <strong>UX/UI Designer</strong>. 
-                I bridge the gap between complex code and user-centric design.
+            <h1 class="hero-greeting">Hi, I'm <span>Sabbir Ahmed</span></h1>
+            <p class="hero-designation">
+                <span class="typewriter-text"></span><span class="cursor"></span>
             </p>
-            <div class="hero-action">
-                <a href="Sabbir_Resume.pdf" download="Sabbir_Ahmed_Resume" class="btn-modern">
+            <p class="hero-subtitle">CSE Graduate • UX/UI • IT Support • Networking</p>
+            
+            <div class="hero-cta">
+                <a href="Sabbir_Resume.pdf" download="Sabbir_Ahmed_Resume" class="btn-primary">
+                    <i class="fa-solid fa-download"></i>
                     <span>Download Resume</span>
-                    <div class="icon"><i class="fa-solid fa-download"></i></div>
                 </a>
-                
-                <div class="hero-socials">
-                    <a href="https://www.facebook.com/sabbirahmed.7sabi" target="_blank" class="social-icon" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/_saab_b_i_r/" target="_blank" class="social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/sabbir-ahmed-0495a4214" target="_blank" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Sabbir325" target="_blank" class="social-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.behance.net/sabbirahmed4396" target="_blank" class="social-icon" title="Behance"><i class="fa-brands fa-behance"></i></a>
-                </div>
+                <a href="#projects" class="btn-secondary">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>View My Work</span>
+                </a>
+            </div>
+
+            <div class="hero-socials">
+                <a href="https://www.facebook.com/sabbirahmed.7sabi" target="_blank" rel="noopener noreferrer" class="social-icon" title="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/_saab_b_i_r/" target="_blank" rel="noopener noreferrer" class="social-icon" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sabbir-ahmed-0495a4214" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Sabbir325" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.behance.net/sabbirahmed4396" target="_blank" rel="noopener noreferrer" class="social-icon" title="Behance">
+                    <i class="fa-brands fa-behance"></i>
+                </a>
             </div>
         </div>
+
         <div class="hero-image" data-aos="zoom-in">
             <div class="profile-frame">
-                <img src="Sabbir.jpeg" alt="Sabbir Ahmed">
+                <img src="Sabbir.jpeg" alt="Sabbir Ahmed - WordPress Developer & E-commerce Manager">
             </div>
         </div>
     </section>
 
-    <section id="work-experience" class="section-bg" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1920');">
-        <h2 class="section-title" data-aos="fade-up">Work Experience</h2>
-        <div class="experience-grid">
-            <div class="experience-highlight" data-aos="zoom-in">
-                <div class="work-badge">Current Role</div>
-                <div class="work-header">
-                    <div>
-                        <span class="work-period">01 July 2026 - Present</span>
-                        <h3>WordPress Developer</h3>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-container about-simple-wrap">
+            <div class="about-simple-layout" data-aos="fade-up">
+                <div class="about-simple-image" data-aos="fade-right">
+                    <img src="About me.jpg" alt="Sabbir Ahmed portrait">
+                </div>
+
+                <div class="about-simple-content" data-aos="fade-left">
+                    <span class="eyebrow about-eyebrow">ABOUT ME</span>
+                    <h2 class="about-simple-title">Who I Am</h2>
+                    <p>
+                        I'm a Computer Science & Engineering graduate with a passion for technology, web development, and digital experiences. I currently work as a WordPress Developer and E-commerce Manager, combining technical skills with practical business needs. I also have a background in UX/UI design, IT support, and networking. I enjoy learning new technologies, solving problems, and creating clean, useful, and user-friendly digital solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="section-container">
+            <h2 class="section-title" data-aos="fade-up">Professional Experience</h2>
+            
+            <div class="experience-timeline">
+                <!-- WordPress Developer -->
+                <div class="experience-card" data-aos="fade-up">
+                    <div class="exp-header">
+                        <div class="exp-title-group">
+                            <h3>WordPress Developer</h3>
+                            <p class="exp-company">
+                                <a href="https://triizync.com" target="_blank" rel="noopener noreferrer" class="company-link">
+                                    <img src="trizync solution.jpg" alt="Trizync Solution logo" class="company-logo">
+                                    Trizync Solution
+                                </a>
+                            </p>
+                        </div>
+                        <span class="exp-period">July 2026 - Present</span>
                     </div>
-                    <a href="https://triizync.com" target="_blank" rel="noopener noreferrer" class="company-tag" aria-label="Visit Trizync Solution website">
-                        <img src="trizync solution.jpg" alt="Trizync Solution logo" class="company-logo">
-                        <span>Trizync Solution</span>
-                    </a>
+                    
+                    <p class="exp-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Joydabpur, Gazipur, Bangladesh
+                    </p>
+
+                    <p class="exp-description">
+                        Designing and developing responsive WordPress websites, customizing themes and plugins, and creating user-friendly digital experiences that align with business objectives.
+                    </p>
+
+                    <ul class="exp-highlights">
+                        <li>Developed responsive and visually polished WordPress websites</li>
+                        <li>Customized themes, layouts, and plugins to meet business requirements</li>
+                        <li>Improved website usability, mobile responsiveness, and overall UX</li>
+                        <li>Resolved technical issues and optimized performance</li>
+                    </ul>
                 </div>
-                <div class="work-address">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>20/10 Joydabpur, Gazipur, Gazipur, Bangladesh, 1700</span>
-                </div>
-                <p>
-                    I am currently working as a <strong>WordPress Developer</strong> at <strong>Trizync Solution</strong>,
-                    where I design and develop responsive websites, customize WordPress functionalities, and create user-friendly
-                    digital experiences that align with business goals.
-                </p>
-                <ul class="work-points">
-                    <li>Developed responsive and visually polished WordPress websites</li>
-                    <li>Customized themes, layouts, and plugins to meet business requirements</li>
-                    <li>Improved website usability, mobile responsiveness, and overall user experience</li>
-                    <li>Resolved website issues and optimized functionality for smooth performance</li>
-                </ul>
-            </div>
-            <div class="experience-highlight" data-aos="zoom-in">
-                <div class="work-header">
-                    <div>
-                        <span class="work-period">01 July 2026 - Present</span>
-                        <h3>E-commerce Manager</h3>
+
+                <!-- E-commerce Manager -->
+                <div class="experience-card" data-aos="fade-up">
+                    <div class="exp-header">
+                        <div class="exp-title-group">
+                            <h3>E-commerce Manager</h3>
+                            <p class="exp-company">
+                                <a href="https://rightpoint.store" target="_blank" rel="noopener noreferrer" class="company-link">
+                                    <img src="Right POint.jpg" alt="Right Point logo" class="company-logo">
+                                    Right Point
+                                </a>
+                            </p>
+                            <p class="exp-division">A division of Trizync Solution</p>
+                        </div>
+                        <span class="exp-period">July 2026 - Present</span>
                     </div>
-                    <a href="https://rightpoint.store" target="_blank" rel="noopener noreferrer" class="company-tag" aria-label="Visit Right Point website">
-                        <img src="Right POint.jpg" alt="Right Point logo" class="company-logo">
-                        <span>Right Point</span>
-                    </a>
+                    
+                    <p class="exp-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Joydabpur, Gazipur, Bangladesh
+                    </p>
+
+                    <p class="exp-description">
+                        Managing online store operations, optimizing product listings, and driving sales growth through strategic e-commerce initiatives and data-driven decisions.
+                    </p>
+
+                    <ul class="exp-highlights">
+                        <li>Managed and optimized e-commerce platforms for enhanced customer experience</li>
+                        <li>Implemented product listing strategies and inventory management</li>
+                        <li>Analyzed sales data and market trends to increase revenue</li>
+                        <li>Collaborated with cross-functional teams to improve store performance</li>
+                    </ul>
                 </div>
-                <div class="work-address">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>20/10 Joydabpur, Gazipur, Gazipur, Bangladesh, 1700</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-container">
+            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+            
+            <div class="skills-grid">
+                <!-- Development -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3 class="category-title">
+                        <i class="fa-solid fa-code"></i>
+                        Development
+                    </h3>
+                    <div class="skills-chips">
+                        <span class="skill-chip">HTML</span>
+                        <span class="skill-chip">CSS</span>
+                        <span class="skill-chip">JavaScript</span>
+                        <span class="skill-chip">WordPress</span>
+                    </div>
                 </div>
-                <p>
-                    I am currently working as an <strong>E-commerce Manager</strong> at <strong>Right Point</strong> (a division of <strong>Trizync Solution</strong>),
-                    where I manage online store operations, optimize product listings, and drive sales growth through strategic e-commerce initiatives.
+
+                <!-- UX/UI -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3 class="category-title">
+                        <i class="fa-solid fa-palette"></i>
+                        UX/UI Design
+                    </h3>
+                    <div class="skills-chips">
+                        <span class="skill-chip">User Research</span>
+                        <span class="skill-chip">Persona Creation</span>
+                        <span class="skill-chip">Usability Testing</span>
+                        <span class="skill-chip">Wireframing</span>
+                        <span class="skill-chip">Prototyping</span>
+                        <span class="skill-chip">Figma</span>
+                        <span class="skill-chip">Adobe XD</span>
+                        <span class="skill-chip">Visual Hierarchy</span>
+                        <span class="skill-chip">Typography</span>
+                        <span class="skill-chip">Accessibility</span>
+                        <span class="skill-chip">Design Systems</span>
+                    </div>
+                </div>
+
+                <!-- IT & Networking -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3 class="category-title">
+                        <i class="fa-solid fa-network-wired"></i>
+                        IT & Networking
+                    </h3>
+                    <div class="skills-chips">
+                        <span class="skill-chip">Network Support</span>
+                        <span class="skill-chip">Troubleshooting</span>
+                        <span class="skill-chip">IP Addressing</span>
+                        <span class="skill-chip">Subnetting</span>
+                        <span class="skill-chip">Account Management</span>
+                        <span class="skill-chip">Access Management</span>
+                        <span class="skill-chip">Cisco Packet Tracer</span>
+                        <span class="skill-chip">IT Support</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3 class="category-title">
+                        <i class="fa-solid fa-wrench"></i>
+                        Tools & Software
+                    </h3>
+                    <div class="skills-chips">
+                        <span class="skill-chip">VS Code</span>
+                        <span class="skill-chip">PyCharm</span>
+                        <span class="skill-chip">CodeBlocks</span>
+                        <span class="skill-chip">Figma</span>
+                        <span class="skill-chip">Adobe XD</span>
+                        <span class="skill-chip">Cisco Packet Tracer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-showcase-section">
+        <div class="section-container">
+            <div class="projects-header" data-aos="fade-up">
+                <span class="eyebrow">MY WORK</span>
+                <h2 class="section-title">Selected Projects</h2>
+                <p class="projects-intro">
+                    A collection of selected UX/UI design, web, and digital projects showcasing my design thinking, technical skills, and problem-solving approach.
                 </p>
-                <ul class="work-points">
-                    <li>Managed and optimized e-commerce platforms for improved customer experience</li>
-                    <li>Implemented product listing strategies and inventory management</li>
-                    <li>Analyzed sales data and market trends to increase revenue</li>
-                    <li>Collaborated with cross-functional teams to enhance online store performance</li>
-                </ul>
+                <a href="projects.html" class="projects-cta-link">
+                    <span>View All Projects</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="projects-filter" data-aos="fade-up">
+                <button class="filter-btn active" type="button" data-filter="all">ALL</button>
+                <button class="filter-btn" type="button" data-filter="ux-ui">UX/UI</button>
+                <button class="filter-btn" type="button" data-filter="web">WEB</button>
+                <button class="filter-btn" type="button" data-filter="e-commerce">E-COMMERCE</button>
+            </div>
+
+            <div class="featured-projects">
+                <article class="featured-project" data-aos="fade-up">
+                    <div class="project-visual project-visual-fitverse" aria-label="Fitverse app preview mockup">
+                        <div class="mockup-window">
+                            <div class="mockup-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="mockup-body">
+                                <div class="mockup-sidebar"></div>
+                                <div class="mockup-main">
+                                    <div class="chart-block large"></div>
+                                    <div class="chart-row">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="card-row">
+                                        <div class="mini-card"></div>
+                                        <div class="mini-card dark"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-tag">FEATURED PROJECT</span>
+                        <h3>Fitverse App</h3>
+                        <p>
+                            A fitness experience designed around habit tracking, smart progress insights, and personalized wellness routines that encourage consistency and long-term engagement.
+                        </p>
+                        <div class="project-meta">
+                            <span class="meta-label">Category</span>
+                            <span class="meta-value">UX/UI Case Study</span>
+                        </div>
+                        <div class="project-tools">
+                            <span>UX Research</span>
+                            <span>Figma</span>
+                            <span>UI Design</span>
+                        </div>
+                        <a href="https://www.behance.net/gallery/232220679/Ux-Case-Study-Fitness-App%28Fitverse%29" target="_blank" rel="noopener noreferrer" class="project-case-link">
+                            View Case Study
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="featured-project reverse" data-aos="fade-up">
+                    <div class="project-content">
+                        <span class="project-tag">FEATURED PROJECT</span>
+                        <h3>Instone Real Estate</h3>
+                        <p>
+                            A premium property discovery platform focused on trust, clarity, and seamless browsing for buyers, renters, and agents through an elevated digital experience.
+                        </p>
+                        <div class="project-meta">
+                            <span class="meta-label">Category</span>
+                            <span class="meta-value">UX/UI Case Study</span>
+                        </div>
+                        <div class="project-tools">
+                            <span>UX Strategy</span>
+                            <span>Wireframes</span>
+                            <span>UI Design</span>
+                        </div>
+                        <a href="https://www.behance.net/gallery/232077105/UX-CASE-STUDY-REAL-ESTATE-%28INSTONE%29" target="_blank" rel="noopener noreferrer" class="project-case-link">
+                            View Case Study
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="project-visual project-visual-instone" aria-label="Instone real estate preview mockup">
+                        <div class="mockup-window mockup-window-alt">
+                            <div class="mockup-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="mockup-body mockup-body-alt">
+                                <div class="property-hero"></div>
+                                <div class="property-grid">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="property-details">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="projects-grid">
+                <article class="mini-project-card" data-category="ux-ui" data-aos="fade-up">
+                    <div class="mini-visual mini-visual-1" aria-label="Creative agency project preview">
+                        <span class="mini-overlay">View Case Study <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                    <div class="mini-body">
+                        <span class="mini-category">UX/UI DESIGN</span>
+                        <h3>Creative Agency Web</h3>
+                        <p>Modern digital agency landing page highlighting services, expertise, and trust-building design systems.</p>
+                        <div class="mini-tools">Figma • UX Research • UI Design</div>
+                        <a href="https://www.behance.net/sabbirahmed4396" target="_blank" rel="noopener noreferrer" class="mini-link">
+                            View Behance Portfolio
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="mini-project-card" data-category="e-commerce" data-aos="fade-up">
+                    <div class="mini-visual mini-visual-2" aria-label="E-commerce mobile project preview">
+                        <span class="mini-overlay">View Case Study <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                    <div class="mini-body">
+                        <span class="mini-category">E-COMMERCE</span>
+                        <h3>E-Commerce Mobile</h3>
+                        <p>User-focused shopping app design with better discovery flow, personalized suggestions, and conversion-driven UX.</p>
+                        <div class="mini-tools">Mobile UX • Product UI • Shopping Flow</div>
+                        <a href="https://www.behance.net/sabbirahmed4396" target="_blank" rel="noopener noreferrer" class="mini-link">
+                            View Behance Portfolio
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="mini-project-card" data-category="ux-ui" data-aos="fade-up">
+                    <div class="mini-visual mini-visual-3" aria-label="LMS dashboard project preview">
+                        <span class="mini-overlay">View Case Study <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                    <div class="mini-body">
+                        <span class="mini-category">UX/UI DESIGN</span>
+                        <h3>LMS Dashboard</h3>
+                        <p>Course management dashboard built to simplify progress tracking, module access, and digital learning workflows.</p>
+                        <div class="mini-tools">Dashboard • UX • UI Design</div>
+                        <a href="https://www.behance.net/sabbirahmed4396" target="_blank" rel="noopener noreferrer" class="mini-link">
+                            View Behance Portfolio
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="mini-project-card" data-category="web" data-aos="fade-up">
+                    <div class="mini-visual mini-visual-4" aria-label="Travel booking project preview">
+                        <span class="mini-overlay">View Case Study <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                    <div class="mini-body">
+                        <span class="mini-category">WEB DESIGN</span>
+                        <h3>Travel Booking</h3>
+                        <p>Minimal travel interface designed for simple booking decisions, trip planning, and polished product discovery.</p>
+                        <div class="mini-tools">Web UI • UX • Booking Flow</div>
+                        <a href="https://www.behance.net/sabbirahmed4396" target="_blank" rel="noopener noreferrer" class="mini-link">
+                            View Behance Portfolio
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="mini-project-card" data-category="web" data-aos="fade-up">
+                    <div class="mini-visual mini-visual-5" aria-label="SaaS landing page project preview">
+                        <span class="mini-overlay">View Case Study <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                    <div class="mini-body">
+                        <span class="mini-category">WEB DESIGN</span>
+                        <h3>SaaS Landing Page</h3>
+                        <p>Conversion-focused software marketing page centered on clarity, interactive sections, and persuasive presentation.</p>
+                        <div class="mini-tools">Landing Page • Copy • UI System</div>
+                        <a href="https://www.behance.net/sabbirahmed4396" target="_blank" rel="noopener noreferrer" class="mini-link">
+                            View Behance Portfolio
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="mini-project-card" data-category="ux-ui" data-aos="fade-up">
+                    <div class="mini-visual mini-visual-6" aria-label="Healthcare portal project preview">
+                        <span class="mini-overlay">View Case Study <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                    <div class="mini-body">
+                        <span class="mini-category">UX/UI DESIGN</span>
+                        <h3>Healthcare Portal</h3>
+                        <p>Patient-first healthcare experience focused on timely access, trust, and clear digital communication.</p>
+                        <div class="mini-tools">Healthcare UX • User Flows • UI Design</div>
+                        <a href="https://www.behance.net/sabbirahmed4396" target="_blank" rel="noopener noreferrer" class="mini-link">
+                            View Behance Portfolio
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="section-bg" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920');">
-        <h2 class="section-title" data-aos="fade-up">Technical Stack</h2>
-        <div class="grid-container">
-            <a href="projects.html" style="text-decoration: none; color: inherit;">
-                <div class="card" data-aos="zoom-in">
-                    <i class="fa-solid fa-pen-nib" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 20px;"></i>
-                    <h3>UX/UI Design</h3>
-                    <p>User research and prototyping. <strong>Click to view 9 Case Studies →</strong></p>
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="section-container">
+            <h2 class="section-title" data-aos="fade-up">Education</h2>
+            
+            <div class="education-timeline">
+                <!-- BSc in CSE -->
+                <div class="education-card" data-aos="fade-up">
+                    <div class="edu-marker"></div>
+                    <div class="edu-content">
+                        <h3>BSc in Computer Science & Engineering</h3>
+                        <p class="edu-institution">Southeast University</p>
+                        <p class="edu-details">
+                            <span class="edu-year">2024</span>
+                            <span class="edu-gpa">CGPA: 3.10/4.00</span>
+                        </p>
+                    </div>
                 </div>
-            </a>
-            <div class="card" data-aos="zoom-in" data-aos-delay="100">
-                <i class="fa-solid fa-network-wired" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 20px;"></i>
-                <h3>IT & Networking</h3>
-                <p>Advanced networking and troubleshooting via Cisco Packet Tracer.</p>
-            </div>
-            <div class="card" data-aos="zoom-in" data-aos-delay="200">
-                <i class="fa-solid fa-terminal" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 20px;"></i>
-                <h3>Development</h3>
-                <p>Proficient in HTML, CSS, JavaScript, and WordPress.</p>
+
+                <!-- HSC -->
+                <div class="education-card" data-aos="fade-up">
+                    <div class="edu-marker"></div>
+                    <div class="edu-content">
+                        <h3>Higher Secondary Certificate (HSC)</h3>
+                        <p class="edu-institution">Gazipur City College</p>
+                        <p class="edu-details">
+                            <span class="edu-year">2019</span>
+                            <span class="edu-stream">Science</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- SSC -->
+                <div class="education-card" data-aos="fade-up">
+                    <div class="edu-marker"></div>
+                    <div class="edu-content">
+                        <h3>Secondary School Certificate (SSC)</h3>
+                        <p class="edu-institution">BARI High School</p>
+                        <p class="edu-details">
+                            <span class="edu-year">2017</span>
+                            <span class="edu-stream">Science</span>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="section-bg" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1920');">
-        <h2 class="section-title" data-aos="fade-up">Experience & Training</h2>
-        <div class="grid-container">
-            <div class="card" data-aos="fade-right">
-                <span style="color: var(--accent); font-weight: 800;">FEB 2024 - JUN 2024</span>
-                <h3 style="margin-top: 10px;">IT Intern</h3>
-                <p><strong>Southeast University</strong></p>
-            </div>
-            <div class="card" data-aos="fade-left">
-                <span style="color: var(--accent); font-weight: 800;">DEC 2024 - JUN 2025</span>
-                <h3 style="margin-top: 10px;">UX/UI Trainee</h3>
-                <p><strong>Creative IT Institute</strong></p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            
+            <div class="contact-wrapper" data-aos="fade-up">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:sabbir4396@gmail.com">sabbir4396@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+8801902449447">+8801902449447</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Gazipur, Bangladesh</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/in/sabbir-ahmed-0495a4214" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Sabbir325" target="_blank" rel="noopener noreferrer" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.behance.net/sabbirahmed4396" target="_blank" rel="noopener noreferrer" title="Behance">
+                            <i class="fa-brands fa-behance"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Your Name" 
+                            required
+                            aria-label="Your Name"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Your Email" 
+                            required
+                            aria-label="Your Email"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="subject" 
+                            name="subject" 
+                            placeholder="Subject" 
+                            required
+                            aria-label="Subject"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            placeholder="Your Message" 
+                            rows="5" 
+                            required
+                            aria-label="Your Message"
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-submit">
+                        <span>Send Message</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
             </div>
         </div>
     </section>
 
-    <section id="education" class="section-bg" style="background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1920');">
-        <h2 class="section-title" data-aos="fade-up">Education</h2>
-        <div class="grid-container">
-            <div class="card" data-aos="fade-up">
-                <h3>BSc in CSE</h3>
-                <p><strong>Southeast University</strong></p>
-                <p>GPA: 3.10 | 2024</p>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="100">
-                <h3>HSC</h3>
-                <p><strong>Gazipur City College</strong></p>
-                <p>Science | 2019</p>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="200">
-                <h3>SSC</h3>
-                <p><strong>BARI High School</strong></p>
-                <p>Science | 2017</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact-section" class="section-bg" style="background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=1920');">
-        <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
-        <div class="contact-wrapper" data-aos="fade-up">
-            <div class="contact-info-card">
-                <h3>Contact Information</h3>
-                <div class="info-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div><span>Email Me</span><p>sabbir4396@gmail.com</p></div>
-                </div>
-                <div class="info-item">
-                    <i class="fa-solid fa-phone"></i>
-                    <div><span>Call Me</span><p>+8801902449447</p></div>
-                </div>
-                <div class="info-item">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div><span>Location</span><p>Gazipur, Bangladesh</p></div>
-                </div>
-            </div>
-            <form class="contact-form">
-                <div class="form-row">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                </div>
-                <input type="text" placeholder="Subject">
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
-            </form>
-        </div>
-    </section>
-
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
-            <div class="footer-brand">
-                <a href="#" class="logo">SABBIR<span>.</span></a>
-                <p>Creating seamless digital experiences through code and design.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                </ul>
-            </div>
-            <div class="footer-social-box">
-                <h4>Follow Me</h4>
+            <div class="footer-content">
+                <a href="#home" class="logo">SABBIR<span>.</span></a>
+                <p class="footer-tagline">Creating seamless digital experiences through code and design.</p>
+                
                 <div class="footer-socials">
-                    <a href="https://www.linkedin.com/in/sabbir-ahmed-0495a4214" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/Sabbir325" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.behance.net/sabbirahmed4396" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                    <a href="https://www.facebook.com/sabbirahmed.7sabi" target="_blank" rel="noopener noreferrer" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sabbir-ahmed-0495a4214" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Sabbir325" target="_blank" rel="noopener noreferrer" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.behance.net/sabbirahmed4396" target="_blank" rel="noopener noreferrer" title="Behance">
+                        <i class="fa-brands fa-behance"></i>
+                    </a>
                 </div>
             </div>
         </div>
+
         <div class="footer-bottom">
-            <p>&copy; 2024 Sabbir Ahmed. All Rights Reserved.</p>
+            <p>&copy; <span id="year"></span> Sabbir Ahmed. All Rights Reserved.</p>
+            <p>Building the web, one pixel at a time.</p>
         </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
 </body>
 </html>
